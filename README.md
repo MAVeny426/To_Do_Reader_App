@@ -36,8 +36,7 @@ Watch a full walkthrough video here:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/MAVeny426/kanban-realtime-app.git
-cd kanban-realtime-app
+git clone git@github.com:MAVeny426/To_Do_Reader_App.git
 ```
 
 ### 2. Setup Backend
@@ -49,8 +48,9 @@ npm install
 ## Create a .env file in /backend and add:
 ```bash
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/KanbanBoard
-JWT_SECRET=your_secret_key
+# MONGO_URI=mongodb://localhost:27017/To_Do_Reader
+MONGO_URL=mongodb+srv://venyma504:w7XkOagoujZk4rXP@cluster0.46qrm8i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=your_secret_key_here
 ```
 
 ## Start backend:
@@ -60,7 +60,7 @@ npm start
 
 ### 3. Setup Frontend
 ```bash
-cd ../frontend
+cd ../UI
 npm install
 npm start
 ```
